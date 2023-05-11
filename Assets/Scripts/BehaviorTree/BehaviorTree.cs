@@ -167,7 +167,7 @@ namespace BehaviorTree
         private int _runningIndex;
 
         public PriorityNode(T context, string[] param, Node<T>[] children):
-            this(context, bool.Parse(param[0]), bool.Parse(param[2]), children) { }
+            this(context, bool.Parse(param[0]), bool.Parse(param[1]), children) { }
         public PriorityNode(T context, bool runningFirst, bool returnOnSucceed, Node<T>[] children): base(context, children)
         {
             _runningFirst = runningFirst;
